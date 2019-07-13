@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <script
+      defer
+      src="https://use.fontawesome.com/releases/v5.0.10/js/all.js"
+      integrity="sha384-slN8GvtUJGnv6ca26v8EzVaR9DC58QEwsIk9q1QXdCU8Yu8ck/tL/5szYlBbqmS+"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://kit.fontawesome.com/5cead19c2c.js"></script>
+    <link rel="stylesheet" href="index.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="main">
+      <nav class="nav">
+        <div class="date_now">時間</div>
+        <ul>
+          <li><i class="fas fa-chart-bar"></i></li>
+          <li><i class="fas fa-bars c_blue"></i></li>
+        </ul>
+      </nav>
+      <div class="clear"></div>
+      <div class="tomato_data">
+        <div class="tomato_txt">
+          <div class="tomato_name">
+            <p class="c_blue">
+              <span class="pointer"></span> first thing to do
+            </p>
+          </div>
+          <div class="tomato_date">
+            <p class="c_green"><span></span> 25:00</p>
+          </div>
+        </div>
+      </div>
+      <div class="tomato_timing">
+        <div class="tomato_tim ">
+          <div class="tomato_inside">
+            <div class="icon c_green pointer">
+              <i class="far fa-play-circle" id="icon"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="side">
+      <h3>Today</h3>
+      <div class="tomato_list">
+        <ul class="list_all">
+          <li>All</li>
+          <li class="list_done">Done(2)</li>
+        </ul>
+        <ul class="tomato_datalist"　id="tomato_datalist">
+          <li>
+            <span class="list_start pointer c_green"
+              ><i class="far fa-play-circle"></i></span
+            >first thing to do <span></span>
+          </li>
+          <li>
+            <span class="list_start pointer list_OO"></span>thing to do
+            <span></span>
+          </li>
+          <li>
+            <span class="list_start pointer list_OO"></span>Done First
+            <span></span>
+          </li>
+          <li>
+            <span class="list_start pointer list_OO"></span>Done second
+            <span></span>
+          </li>
+        </ul>
+      </div>
+      <a href="#" class="add">+</a>
+      <form action="#" class="addtxt" name="addtxt">
+          <p>番茄名稱</p>
+          <input type="text" class="txt" id="txt" name = "txt">
+          <input type="button" value='確定' data-action="submit" class="submit" name = "ok">
+          <input type="button" value='取消' data-action="submit" class="submit cancel" name = "cancel">
+      </form>
+    </div>
+    <div class="clear"></div>
+
+    <script src="index.js"></script>
+  </body>
+</html>
